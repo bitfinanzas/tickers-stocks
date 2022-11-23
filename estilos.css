@@ -5,3 +5,11 @@ body {
 .tradingview-widget-copyright {
     display: none;
 }
+
+.container-tickers {
+background-color: #0f0e4c;
+}
+
+.tradingview-widget-container {
+    height: 45px !important;
+}

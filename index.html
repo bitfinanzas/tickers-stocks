@@ -1,50 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
     <title>Document</title>
-</head>
-<body>
-
-<!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-  <div class="tradingview-widget-copyright"><a href="https://es.tradingview.com/markets/" rel="noopener" target="_blank"><span class="blue-text">Mercados</span></a> de TradingView</div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
-  {
-  "symbols": [
-    {
-      "proName": "NASDAQ:TSLA",
-      "title": "Tesla"
-    },
-    {
-      "proName": "NYSE:DIS",
-      "title": "Disney"
-    },
-    {
-      "proName": "NYSE:RCL",
-      "title": "Royal Caribean"
-    },
-    {
-      "proName": "BINANCE:BTCUSDT",
-      "title": "Bitcoin"
-    },
-    {
-      "proName": "BINANCE:ETHUSDT",
-      "title": "Ethereum"
-    }
-  ],
-  "showSymbolLogo": true,
-  "colorTheme": "dark",
-  "isTransparent": true,
-  "displayMode": "adaptive",
-  "locale": "es"
-}
-  </script>
-</div>
-<!-- TradingView Widget END -->
-
-</body>
+  </head>
+  <body>
+    <div class="container-tickers">
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright">
+          <a
+            href="https://es.tradingview.com/markets/"
+            rel="noopener"
+            target="_blank"
+            ><span class="blue-text">Mercados</span></a
+          >
+          de TradingView
+        </div>
+        <script
+          type="text/javascript"
+          src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+          async
+        >
+                  {
+                    "symbols": [
+                      {
+                        "proName": "NASDAQ:TSLA",
+                        "title": "Tesla"
+                      },
+                      {
+                        "proName": "NYSE:DIS",
+                        "title": "Disney"
+                      },
+                      {
+                "proName": "NYSE:RCL",
+                "title": "Royal Caribean"
+              },
+              {
+                "proName": "BINANCE:BTCUSDT",
+                "title": "Bitcoin"
+              },
+              {
+                "proName": "BINANCE:ETHUSDT",
+                "title": "Ethereum"
+              }
+            ],
+            "showSymbolLogo": true,
+            "colorTheme": "dark",
+            "isTransparent": true,
+            "displayMode": "adaptive",
+            "locale": "es"
+          }
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
+    </div>
+  </body>
 </html>
